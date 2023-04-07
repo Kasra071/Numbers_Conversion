@@ -48,7 +48,7 @@ h3 a{
     box-shadow: 0 0 10px white;
     border-radius: 20px;
     max-width: 600px;
-    height: 400px;
+    height: 300px;
     margin: auto;
     color: black;
     margin-top: 50px;
@@ -177,4 +177,84 @@ h3 a{
    }
    footer a{
     color: blue;
+   }
+
+   .InputsContainer .PointingDownSVG{
+    display: none;
+   }
+
+   @media only screen and (max-width:730px){
+    .WholeNumberContainer {
+        max-width: 500px;
+        height: 250px;
+      }
+      .Explaination{
+        max-width: 500px;
+      }
+   }
+
+   @media only screen and (max-width:620px){
+    .WholeNumberContainer {
+        max-width: 400px;
+      }
+      .Explaination{
+        max-width: 400px;
+      }
+      .HeaderChooseBases span{
+        font-size: 25px;
+      }
+      .SelectTagsContainer{
+        flex-basis: 70%;
+      }
+      .InputsContainer {
+        display: block;
+        margin-top: 30px;
+        text-align: center;
+      }
+      .WholeNumberContainer {
+        height: 350px;
+      }
+      .InputsContainer svg{
+        display: none;
+      }
+      .InputsContainer .PointingDownSVG{
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .input-group{
+        width: fit-content;
+        margin: auto;
+      }
+      .Explaination p{
+        font-size: 16px;
+      }
+   }
+
+   @media only screen and (max-width:520px){
+    .WholeNumberContainer {
+        max-width: 250px;
+        padding-top: 30px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      .Explaination{
+        padding-right: 30px;
+        padding-left: 30px;
+
+      }
+      .Explaination{
+        max-width: 250px;
+      }
+      .HeaderChooseBases span{
+        font-size: 20px;
+      }
+      .SelectTagsContainer{
+        flex-basis: 100%;
+        font-size: 20px;
+      }
+      .numbers_select{
+        font-size: 16px;
+      }
    }
