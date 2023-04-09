@@ -219,3 +219,28 @@ function numbers_output_sync() {
     }
 
 }
+
+ChangeLanguage('en',document.getElementById('en-lang-btn'))
+function ChangeLanguage(lang,clickedElement){
+    var englishTexts = document.getElementById('English-exp')
+    var persianTexts = document.getElementById('Persian-exp')
+    var titleTag = document.getElementById('exp-title')
+    document.querySelectorAll('.LanguageSelect div').forEach(element => {
+        element.classList.remove('activeLang')
+    })
+
+    switch(lang){
+        case 'en':
+            englishTexts.style.display = 'block'
+            persianTexts.style.display = 'none'
+            clickedElement.classList.add('activeLang')
+            titleTag.textContent = 'What is this?'
+            break;
+        case 'fa':
+            englishTexts.style.display = 'none'
+            persianTexts.style.display = 'block'
+            clickedElement.classList.add('activeLang')
+            titleTag.textContent = 'این ابزار چیه؟'
+            break;
+    }
+}

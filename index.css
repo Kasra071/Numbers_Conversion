@@ -14,7 +14,10 @@
     font-family: SourceCode;
     src: url(./fonts/SourceSansPro-Regular.ttf);
 }
-
+@font-face {
+  font-family: iransans;
+  src: url(./fonts/IRANSansXNoEn-Regular.ttf);
+}
 *{
     padding: 0px;
     margin: 0px;
@@ -149,6 +152,7 @@ h3 a{
    .Explaination h2{
     text-align: center;
     padding-top: 10px;
+    font-family: OpenSans,iransans;
    }
 
    .Explaination p{
@@ -183,6 +187,44 @@ h3 a{
     display: none;
    }
 
+   #Persian-exp p{
+    font-family: iransans;
+    direction: rtl;
+   }
+   #Persian-exp span{
+    left: 15px;
+    direction: rtl;
+    right: auto;
+   }
+
+   .LanguageSelect{
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    width: 75px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 16px;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+
+   }
+   .LanguageSelect div{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    cursor: pointer;
+    user-select: none;
+   }
+   .LanguageSelect div:first-child{
+    border-left: 1px solid gray;
+   }
+   .LanguageSelect .activeLang{
+    background-color: #eee;
+   }
    @media only screen and (max-width:730px){
     .WholeNumberContainer {
         max-width: 500px;
