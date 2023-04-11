@@ -299,4 +299,13 @@ h3 a{
       .numbers_select{
         font-size: 16px;
       }
+
+      .LanguageSelect{
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+       }
+       .Explaination p:first-child{
+        margin-top: 45px;
+       }
    }
